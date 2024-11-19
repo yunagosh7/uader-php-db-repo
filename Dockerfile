@@ -1,6 +1,8 @@
 # Usar la imagen oficial de MySQL
 FROM mysql:8.0
 
+RUN cargo build -r
+
 # Establecer variables de entorno (opcional, pero recomendable)
 # El password de root y el nombre de la base de datos inicial
 ENV MYSQL_ROOT_PASSWORD=dbUserUader
